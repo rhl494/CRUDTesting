@@ -11,7 +11,7 @@ including header content which is common for all pages
 	<p style="color:green"><%- messages.success %></p>
 <% } %>
 
-<form action="/users/edit/<%= id %>" method="post" name="form1">
+<form action="/adminlogin/adminedit/<%= id %>" method="post" name="form1">
 	<table width="25%" border="0">
 		<tr>
 			<td>Username</td>
@@ -20,10 +20,6 @@ including header content which is common for all pages
 		<tr>
 			<td>Password</td>
 			<td><input type="text" name="password" value="<%= password %>" /></td>
-		</tr>
-		<tr>
-			<td>Administrator</td>
-			<td><input type="text" name="administrator" value="<%= administrator %>" /></td>
 		</tr>
 		<tr>
 			<td></td>

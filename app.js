@@ -39,7 +39,8 @@ app.set('view engine', 'ejs')
  * import routes/users.js
  */ 
 var index = require('./routes/index')
-var users = require('./routes/users')
+var adminlogin = require('./routes/adminlogin')
+var userlogin = require('./routes/userlogin')
 var admin = require('./routes/admin')
 var login = require('./routes/login')
 
@@ -109,7 +110,8 @@ app.use(flash())
 
 
 app.use('/', index)
-app.use('/users', users)
+app.use('/adminlogin', adminlogin)
+app.use('/userlogin', userlogin)
 app.use('/admin', admin)
 app.use('/login', login)
 
